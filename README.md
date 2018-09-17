@@ -36,6 +36,7 @@ React is known to be a multi-platform UI library, but it is not that simple to g
 - [Installation](#installation)
 - [Usage](#usage)
 - [Inspiration](#inspiration)
+  - [Renderers](#renderers)
 - [Other Solutions](#other-solutions)
 - [Contributors](#contributors)
 - [LICENSE](#license)
@@ -57,7 +58,21 @@ npm install --save react-agnostic
 
 ## Inspiration
 
-// TODO
+Repository based on [kcd-oss](https://github.com/kentcdodds/generator-kcd-oss)
+
+Blog with many react supported renderers: https://dev.to/kayis/react-can-do-it-31di
+
+### Renderers
+
+https://facebook.github.io/react-native/
+https://github.com/Microsoft/react-native-windows
+https://github.com/lelandrichardson/react-primitives
+https://github.com/Microsoft/reactxp
+https://github.com/Yomguithereal/react-blessed
+https://github.com/Yomguithereal/react-blessed
+https://github.com/diegomura/react-pdf
+https://github.com/nitin42/redocx
+https://github.com/facebook/react-360
 
 ## Other Solutions
 

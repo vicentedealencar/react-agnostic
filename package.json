@@ -1,6 +1,6 @@
 {
   "name": "react-agnostic",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.1",
   "description": "Platform agnostic react components",
   "main": "dist/index.js",
   "engines": {
