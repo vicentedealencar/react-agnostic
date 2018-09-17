@@ -1,7 +1,2 @@
-import ComponentsProvider from './ComponentsProvider'
-import withComponents from './withComponents'
-
-export default {
-  ComponentsProvider,
-  withComponents,
-}
+export {default as ComponentsProvider} from './ComponentsProvider'
+export {default as withComponents} from './withComponents'

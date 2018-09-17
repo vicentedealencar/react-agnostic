@@ -22,11 +22,11 @@
 
 ## The problem
 
-// TODO
+React is known to be a multi-platform UI library, but it is not that simple to get done. There are many renderers (as: react-dom, react-native, react-primitives, reactxp, react-blessed, react-tv, react-pdf, redocx, react-360, etc) which allow components to run in different platforms. When you write a component that dependends directly on a component specific to some platform, this means it wont run on any other platform.
 
 ## This solution
 
-// TODO
+`react-agnostic` makes it so you can write your components without any direct dependencies from platform specific components. It applies inversion of control using react context pass around components.
 
 ## Table of Contents
 
