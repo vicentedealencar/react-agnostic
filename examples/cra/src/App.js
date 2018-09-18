@@ -1,7 +1,5 @@
-import React, {Component} from 'react'
-import Agnostic from 'react-agnostic'
-import logo from './logo.svg'
-import './App.css'
+import React from 'react'
+import {ComponentsProvider} from 'react-agnostic'
 import UpdateCartItem from './components/UpdateCartItem'
 
 const Text = props => (
@@ -31,23 +29,14 @@ const Button = props => (
   />
 )
 
-const componentsCustom = {
+const components = {
   View,
   Text,
   Button,
 }
 
-// eslint-disable-next-line
-const componentsVanilla = {
-  View: 'div',
-  Text: 'span',
-}
-
-const components = componentsCustom // componentsVanilla
-
-class App extends Component {
+class App extends React.Component {
   state = {
-    x: 2,
     item: {
       name: 'ball',
       amount: 3,
@@ -56,21 +45,12 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Agnostic.ComponentsProvider components={components}>
-          <UpdateCartItem
-            item={this.state.item}
-            updateCartItem={item => this.setState({item})}
-          />
-        </Agnostic.ComponentsProvider>
-      </div>
+      <ComponentsProvider components={components}>
+        <UpdateCartItem
+          item={this.state.item}
+          updateCartItem={item => this.setState({item})}
+        />
+      </ComponentsProvider>
     )
   }
 }

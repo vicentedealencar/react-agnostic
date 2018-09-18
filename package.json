@@ -1,6 +1,6 @@
 {
   "name": "react-agnostic",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Platform agnostic react components",
   "main": "dist/index.js",
   "engines": {
@@ -33,6 +33,8 @@
   "eslintConfig": {
     "extends": "./node_modules/kcd-scripts/eslint.js",
     "rules": {
+      "import/no-unassigned-import": "off",
+      "no-console": "off",
       "react/prop-types": "off",
       "react/prefer-stateless-function": "off"
     }

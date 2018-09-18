@@ -1,5 +1,5 @@
 import React from 'react'
-import Agnostic from 'react-agnostic'
+import {withComponents} from 'react-agnostic'
 
 const UpdateCartItem = ({item, updateCartItem, components}) => {
   const {Button, Text, View} = components
@@ -23,4 +23,4 @@ const UpdateCartItem = ({item, updateCartItem, components}) => {
   )
 }
 
-export default Agnostic.withComponents(UpdateCartItem)
+export default withComponents(UpdateCartItem)
