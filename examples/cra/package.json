@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "agnostic-components": "file:../components",
     "react": "^16.5.1",
     "react-agnostic": "^0.0.4",
     "react-dom": "^16.5.1",

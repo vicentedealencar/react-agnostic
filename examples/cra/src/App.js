@@ -1,6 +1,6 @@
 import React from 'react'
 import {ComponentsProvider} from 'react-agnostic'
-import UpdateCartItem from './components/UpdateCartItem'
+import {CartItem, UpdateCartItem} from 'agnostic-components'
 
 const Text = props => (
   <span
@@ -40,12 +40,14 @@ class App extends React.Component {
     item: {
       name: 'ball',
       amount: 3,
+      price: 2,
     },
   }
 
   render() {
     return (
       <ComponentsProvider components={components}>
+        <CartItem item={this.state.item} />
         <UpdateCartItem
           item={this.state.item}
           updateCartItem={item => this.setState({item})}
