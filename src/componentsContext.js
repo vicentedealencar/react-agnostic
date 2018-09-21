@@ -8,3 +8,5 @@ if (!React.createContext) {
 export const {Provider, Consumer} = React.createContext({
   ...defaults,
 })
+
+export default {Provider, Consumer}
