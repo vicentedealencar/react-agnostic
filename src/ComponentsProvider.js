@@ -14,6 +14,10 @@ export default class ComponentsProvider extends React.PureComponent {
     const {children} = this.props
     const {components} = this.state
 
+    if (!Provider) {
+      throw new Error('Provider not defined. Try using react > 16')
+    }
+        
     return <Provider value={components}>{children}</Provider>
   }
 }

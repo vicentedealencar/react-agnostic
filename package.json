@@ -1,6 +1,6 @@
 {
   "name": "react-agnostic",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Platform agnostic react components",
   "main": "dist/index.js",
   "engines": {

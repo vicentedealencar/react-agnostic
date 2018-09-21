@@ -6,6 +6,11 @@ export default function withComponents(WrappedComponent) {
   class WithComponents extends React.PureComponent {
     render() {
       const {components, ...passedProps} = this.props
+
+      if (!Consumer) {
+        throw new Error('Consumer not defined. Try using react > 16')
+      }
+
       return (
         <Consumer>
           {contextComponents => {
