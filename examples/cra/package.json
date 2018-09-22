@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "agnostic-components": "file:../components",
+    "numeral": "^2.0.6",
     "react": "^16.5.1",
-    "react-agnostic": "^0.0.4",
+    "react-agnostic": "^0.0.7",
     "react-dom": "^16.5.1",
     "react-scripts": "1.1.5"
   },

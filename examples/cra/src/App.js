@@ -1,6 +1,8 @@
 import React from 'react'
-import {ComponentsProvider} from 'react-agnostic'
-import {CartItem, UpdateCartItem} from 'agnostic-components'
+import RA from 'react-agnostic'
+import {CartItem, UpdateCartItem} from './agnostic-components'
+
+const {ComponentsProvider} = RA
 
 const Text = props => (
   <span
@@ -11,7 +13,7 @@ const Text = props => (
 const View = props => (
   <div
     {...props}
-    style={{backgroundColor: '#222', padding: 20, color: 'white'}}
+    style={{backgroundColor: '#222', padding: 20, color: 'white', textAlign: 'center'}}
   />
 )
 const Button = props => (
