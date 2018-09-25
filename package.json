@@ -38,7 +38,10 @@
     "extends": "./node_modules/kcd-scripts/eslint.js",
     "rules": {
       "import/no-unassigned-import": "off",
+      "import/no-unresolved": "off",
       "no-console": "off",
+      "babel/new-cap": "off",
+      "react/jsx-pascal-case": "off",
       "react/prop-types": "off",
       "react/prefer-stateless-function": "off"
     }
