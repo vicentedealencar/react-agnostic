@@ -37,6 +37,11 @@ React is known to be a multi-platform UI library, but it is not that simple to g
 - [Usage](#usage)
   - [`ComponentsProvider`](#componentsprovider)
   - [`withComponents`](#withcomponents)
+- [Examples](#examples)
+  - [Create React App](#create-react-app)
+  - [Create React Native App](#create-react-native-app)
+  - [Proton Native](#proton-native)
+  - [ReactXP](#reactxp)
 - [Inspiration](#inspiration)
   - [Renderers](#renderers)
 - [Other Solutions](#other-solutions)
@@ -50,7 +55,7 @@ React is known to be a multi-platform UI library, but it is not that simple to g
 This module is distributed via [npm][npm] which is bundled with [node][node] and
 should be installed as one of your project's `dependencies`:
 
-```
+```sh
 npm install --save react-agnostic
 ```
 
@@ -166,6 +171,64 @@ const UpdateCartItem = ({item, updateCartItem, components}) => {
 export default withComponents(UpdateCartItem)
 ```
 
+## Examples
+
+Begin by cloning this repository, then cd into it.
+
+```sh
+git clone https://github.com/vicentedealencar/react-agnostic
+cd react-agnostic
+```
+
+### Create React App
+
+[create-react-app][create-react-app]
+
+```sh
+cd examples/cra
+npm install
+npm start
+```
+
+### Create React Native App
+
+[create-react-native-app][create-react-native-app]
+
+```sh
+npm install -g expo-cli
+cd examples/crna
+npm install
+expo start
+```
+
+### Proton Native
+
+[proton-native][proton-native]
+
+```sh
+cd examples/proton
+npm install
+npm start
+```
+
+### ReactXP
+
+[reactxp][reactxp]
+
+```sh
+cd examples/reactxp
+npm install
+
+# web
+npm web-watch
+start index.html
+
+# native
+npm start
+npm run android
+npm run ios
+```
+
 ## Inspiration
 
 Repository based on [kcd-oss](https://github.com/kentcdodds/generator-kcd-oss)
@@ -178,7 +241,7 @@ Blog with many react supported renderers: https://dev.to/kayis/react-can-do-it-3
 - [react-native-windows][react-native-windows]
 - [react-primitives][react-primitives]
 - [reactxp][reactxp]
-- [react-blessed][react-blessed]
+- [proton-native][proton-native]
 - [react-blessed][react-blessed]
 - [react-pdf][react-pdf]
 - [redocx][redocx]
@@ -241,3 +304,6 @@ MIT
 [react-pdf]: https://github.com/diegomura/react-pdf
 [redocx]: https://github.com/nitin42/redocx
 [react-360]: https://github.com/facebook/react-360
+[create-react-app]: https://github.com/facebook/create-react-app
+[create-react-native-app]: https://github.com/react-community/create-react-native-app
+[proton-native]: https://github.com/kusti8/proton-native
