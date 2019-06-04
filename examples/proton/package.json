@@ -9,16 +9,16 @@
     "dist": "electron-builder"
   },
   "dependencies": {
-    "proton-native": "latest",
-    "react": "^16.5.2",
+    "proton-native": "1.1.3",
+    "react": "^16.8.2",
     "react-agnostic": "^0.0.7"
   },
   "devDependencies": {
-    "babel-cli": "latest",
-    "babel-preset-env": "latest",
-    "babel-preset-react": "latest",
-    "babel-preset-stage-0": "latest",
-    "electron-builder": "latest"
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "electron-builder": "^20.42.0"
   },
   "build": {
     "protonNodeVersion": "current",

@@ -1,5 +1,6 @@
 {
-  "name": "empty-project-template",
+  "name": "crna",
+  "version": "0.1.0",
   "main": "node_modules/expo/AppEntry.js",
   "private": true,
   "scripts": {
