@@ -1,8 +1,7 @@
 import React from 'react'
 import RA from 'react-agnostic'
-import {CartItem, UpdateCartItem} from './agnostic-components'
 
-const {ComponentsProvider} = RA
+const {ComponentsProvider, components: { UpdateCartItem, CartItem }} = RA
 
 const Text = props => (
   <span

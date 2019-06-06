@@ -1,8 +1,5 @@
 import React from 'react'
-// import {withComponents} from 'react-agnostic'
-import RA from 'react-agnostic'
-
-const {withComponents} = RA
+import withComponents from '../withComponents'
 
 const UpdateCartItem = ({item, updateCartItem, components}) => {
   const {Button, Text, View} = components

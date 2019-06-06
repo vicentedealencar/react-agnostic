@@ -1,7 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View as RNView, Button as RNButton } from 'react-native';
-import { ComponentsProvider } from 'react-agnostic'
-import UpdateCartItem from './UpdateCartItem'
+import { ComponentsProvider, components as agnosticComponents } from 'react-agnostic'
+
+const { UpdateCartItem } = agnosticComponents
 
 const styles = StyleSheet.create({
   container: {
@@ -20,8 +21,6 @@ const Button = props => <RNButton {...props} title={props.children} onPress={pro
 const View = props => <RNView {...props} style={[styles.row].concat(props.style)} />
 
 const components = {Text, View, Button }
-console.log('components', Object.keys(components));
-
 
 export default class App extends React.Component {
   state = {

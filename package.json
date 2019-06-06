@@ -8,10 +8,9 @@
         ]
     },
     "scripts": {
+        "start": "yarn workspace react-agnostic build --watch",
         "start:cra": "yarn workspace cra start",
         "start:crna": "yarn workspace crna start",
-        "start:proton": "yarn workspace proton start",
-        "start:reactxp": "yarn workspace reactxp start",
         "test": "yarn workspace react-agnostic test",
         "nuke": "rimraf **/node_modules"
     }

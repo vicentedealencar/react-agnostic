@@ -1,6 +1,6 @@
 {
   "name": "react-agnostic",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Platform agnostic react components",
   "main": "dist/react-agnostic.cjs.js",
   "module": "dist/react-agnostic.esm.js",
@@ -58,5 +58,8 @@
   "bugs": {
     "url": "https://github.com/vicentedealencar/react-agnostic/issues"
   },
-  "homepage": "https://github.com/vicentedealencar/react-agnostic#readme"
+  "homepage": "https://github.com/vicentedealencar/react-agnostic#readme",
+  "dependencies": {
+    "numeral": "^2.0.6"
+  }
 }
