@@ -1,7 +1,9 @@
 {
     "private": true,
     "workspaces": {
-        "nohoist": ["**"],
+        "nohoist": [
+            "**"
+        ],
         "packages": [
             "packages/*",
             "examples/*"
@@ -12,6 +14,19 @@
         "start:cra": "yarn workspace cra start",
         "start:crna": "yarn workspace crna start",
         "test": "yarn workspace react-agnostic test",
+        "precommit": "lint-staged",
+        "pretty": "prettier --write \"./**/*.js\"",
         "nuke": "rimraf **/node_modules"
+    },
+    "lint-staged": {
+        "*.js": [
+            "yarn pretty",
+            "git add"
+        ]
+    },
+    "devDependencies": {
+        "husky": "^2.4.0",
+        "lint-staged": "^8.2.0",
+        "prettier": "^1.18.0"
     }
 }
