@@ -4,16 +4,17 @@ import UpdateCartItem from '../UpdateCartItem'
 import ComponentsProvider from '../../ComponentsProvider'
 
 test('UpdateCartItem renders correctly', () => {
-  const component = <UpdateCartItem
-    updateCartItem={() => {}}
-    item={{
-      name: 'ball',
-      amount: 3,
-      price: 2,
-    }} />
-  const tree = renderer
-    .create(component)
-    .toJSON()
+  const component = (
+    <UpdateCartItem
+      updateCartItem={() => {}}
+      item={{
+        name: 'ball',
+        amount: 3,
+        price: 2,
+      }}
+    />
+  )
+  const tree = renderer.create(component).toJSON()
   expect(tree).toMatchSnapshot()
 })
 
@@ -27,17 +28,18 @@ test('UpdateCartItem renders with components passed by props', () => {
     Button,
   }
 
-  const component = <UpdateCartItem
-    components={components}
-    updateCartItem={() => {}}
-    item={{
-      name: 'ball',
-      amount: 3,
-      price: 2,
-    }} />
-  const tree = renderer
-    .create(component)
-    .toJSON()
+  const component = (
+    <UpdateCartItem
+      components={components}
+      updateCartItem={() => {}}
+      item={{
+        name: 'ball',
+        amount: 3,
+        price: 2,
+      }}
+    />
+  )
+  const tree = renderer.create(component).toJSON()
   expect(tree).toMatchSnapshot()
 })
 
@@ -51,17 +53,18 @@ test('UpdateCartItem renders with components passed by Provider', () => {
     Button,
   }
 
-  const component = <ComponentsProvider components={components}>
-    <UpdateCartItem
-      updateCartItem={() => {}}
-      item={{
-        name: 'ball',
-        amount: 3,
-        price: 2,
-      }} />
-  </ComponentsProvider>
-  const tree = renderer
-    .create(component)
-    .toJSON()
+  const component = (
+    <ComponentsProvider components={components}>
+      <UpdateCartItem
+        updateCartItem={() => {}}
+        item={{
+          name: 'ball',
+          amount: 3,
+          price: 2,
+        }}
+      />
+    </ComponentsProvider>
+  )
+  const tree = renderer.create(component).toJSON()
   expect(tree).toMatchSnapshot()
 })

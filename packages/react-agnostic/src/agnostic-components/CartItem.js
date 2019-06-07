@@ -5,7 +5,7 @@ import _UpdateCartItem from './UpdateCartItem'
 
 const CartItem = ({
   item,
-  components: {Text, View, Button},
+  components: { Text, View, Button },
   updateCartItem,
   UpdateCartItem = _UpdateCartItem,
   ...otherProps

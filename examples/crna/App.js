@@ -1,6 +1,14 @@
-import React from 'react';
-import { StyleSheet, Text, View as RNView, Button as RNButton } from 'react-native';
-import { ComponentsProvider, components as agnosticComponents } from 'react-agnostic'
+import React from 'react'
+import {
+  StyleSheet,
+  Text,
+  View as RNView,
+  Button as RNButton,
+} from 'react-native'
+import {
+  ComponentsProvider,
+  components as agnosticComponents,
+} from 'react-agnostic'
 
 const { UpdateCartItem } = agnosticComponents
 
@@ -12,15 +20,19 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   row: {
-    flexDirection: 'row'
-  }
-});
+    flexDirection: 'row',
+  },
+})
 
-const Button = props => <RNButton {...props} title={props.children} onPress={props.onClick} />
+const Button = props => (
+  <RNButton {...props} title={props.children} onPress={props.onClick} />
+)
 
-const View = props => <RNView {...props} style={[styles.row].concat(props.style)} />
+const View = props => (
+  <RNView {...props} style={[styles.row].concat(props.style)} />
+)
 
-const components = {Text, View, Button }
+const components = { Text, View, Button }
 
 export default class App extends React.Component {
   state = {
@@ -36,10 +48,10 @@ export default class App extends React.Component {
         <View style={styles.container}>
           <UpdateCartItem
             item={this.state.item}
-            updateCartItem={item => this.setState({item})}
+            updateCartItem={item => this.setState({ item })}
           />
         </View>
       </ComponentsProvider>
-    );
+    )
   }
 }

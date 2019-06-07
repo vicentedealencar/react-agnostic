@@ -1,18 +1,26 @@
 import React from 'react'
 import RA from 'react-agnostic'
 
-const {ComponentsProvider, components: { UpdateCartItem, CartItem }} = RA
+const {
+  ComponentsProvider,
+  components: { UpdateCartItem, CartItem },
+} = RA
 
 const Text = props => (
   <span
     {...props}
-    style={{fontFamily: 'monospace', padding: 10, fontSize: 24}}
+    style={{ fontFamily: 'monospace', padding: 10, fontSize: 24 }}
   />
 )
 const View = props => (
   <div
     {...props}
-    style={{backgroundColor: '#222', padding: 20, color: 'white', textAlign: 'center'}}
+    style={{
+      backgroundColor: '#222',
+      padding: 20,
+      color: 'white',
+      textAlign: 'center',
+    }}
   />
 )
 const Button = props => (
@@ -51,7 +59,7 @@ class App extends React.Component {
         <CartItem item={this.state.item} />
         <UpdateCartItem
           item={this.state.item}
-          updateCartItem={item => this.setState({item})}
+          updateCartItem={item => this.setState({ item })}
         />
       </ComponentsProvider>
     )
