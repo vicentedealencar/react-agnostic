@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UpdateCartItem renders correctly 1`] = `
+<div>
+  <button
+    disabled={false}
+    onClick={[Function]}
+  >
+    -
+  </button>
+  <span>
+    3
+  </span>
+  <button
+    onClick={[Function]}
+  >
+    +
+  </button>
+</div>
+`;
+
+exports[`UpdateCartItem renders with components passed by Provider 1`] = `
+<section>
+  <a
+    disabled={false}
+    onClick={[Function]}
+  >
+    -
+  </a>
+  <p>
+    3
+  </p>
+  <a
+    onClick={[Function]}
+  >
+    +
+  </a>
+</section>
+`;
+
+exports[`UpdateCartItem renders with components passed by props 1`] = `
+<section>
+  <a
+    disabled={false}
+    onClick={[Function]}
+  >
+    -
+  </a>
+  <p>
+    3
+  </p>
+  <a
+    onClick={[Function]}
+  >
+    +
+  </a>
+</section>
+`;

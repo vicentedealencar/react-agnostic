@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartItem renders correctly 1`] = `
+<div>
+  <span>
+    3
+  </span>
+  <span>
+    ball
+     - 
+    6
+  </span>
+</div>
+`;
